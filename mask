@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Илон Маск</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #0f172a, #1e3a8a);
+            color: white;
+            margin: 0;
+            text-align: center;
+        }
+
+        header {
+            padding: 30px;
+            background: rgba(0,0,0,0.3);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 15px;
+        }
+
+        button {
+            background: #f59e0b;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        button:hover {
+            background: #d97706;
+        }
+
+        #fact {
+            margin-top: 15px;
+            font-size: 20px;
+            color: #facc15;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🚀 Илон Маск 🚀</h1>
+    <p>Кәсіпкер, инженер және өнертапқыш</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Илон Маск кім?</h2>
+        <p>
+            Илон Маск — әлемге танымал кәсіпкер және инженер.
+            Ол Tesla, SpaceX және басқа да технологиялық
+            жобалардың дамуына үлкен үлес қосты.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Жетістіктері</h2>
+        <ul style="text-align:left;">
+            <li>SpaceX ғарыш компаниясын құрды.</li>
+            <li>Tesla электромобильдерінің дамуына жетекшілік етті.</li>
+            <li>Жасанды интеллект пен жаңа технологияларды қолдайды.</li>
+            <li>Ғарышты игеру жобаларын жүзеге асыруда.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Қызықты дерек</h2>
+        <button onclick="showFact()">Дерек көрсету</button>
+        <p id="fact"></p>
+    </div>
+
+</div>
+
+<script>
+function showFact() {
+    const facts = [
+        "Илон Маск Оңтүстік Африка Республикасында дүниеге келген.",
+        "SpaceX қайта пайдаланылатын зымырандарды жасады.",
+        "Tesla әлемдегі ең танымал электромобиль брендтерінің бірі.",
+        "Илон Маск ғарышқа адамдарды жіберу жобаларын қолдайды.",
+        "Ол технология мен инновацияға ерекше көңіл бөледі."
+    ];
+
+    const randomFact = facts[Math.floor(Math.random() * facts.length)];
+    document.getElementById("fact").innerText = randomFact;
+}
+</script>
+
+</body>
+</html>
